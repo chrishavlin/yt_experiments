@@ -2,6 +2,12 @@
 
 Contributions are welcome!
 
+## Scope of contributions
+
+Deciding on whether or not your new feature may be a good fit here or over in `yt` is a bit nebulous!
+The goal of `yt_experiments` is to provide a home for rapid prototyping of experimental `yt` features, accompanied by frequent
+releases as often as needed. And eventually, the features released here may be moved over to `yt` (or their own separate packages).
+
 ## Developer notes
 
 ### Test suite
@@ -17,6 +23,13 @@ To run tests:
 ``` shell
 pytest -v .
 ```
+
+### Type hints
+
+There is a `mypy` test run through CI, but fully type hinting may not be necessary. If you hope
+to eventually move your new feature over to `yt`, you'll want to fully type-hint your new code
+eventually, but you can do so gradually or release here initially without type hints. We won't judge.
+Remember the goal here is to quickly get experimental new features out to folks who want them quick!
 
 ### Releasing
 
